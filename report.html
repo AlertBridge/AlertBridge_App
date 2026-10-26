@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Report | SafeCommunity</title>
+<link rel="stylesheet" href="report.css">
+<link rel="stylesheet" href="shared.css">
+</head>
+<body>
+
+<header class="app-header">
+  <a class="brand" href="dashboard.html"><span class="brand-mark">S</span><span class="brand-name">Safe<span>Community</span></span></a>
+  <button id="menuBtn" class="menu-btn" aria-label="Open menu"><span></span><span></span><span></span></button>
+  <nav id="navbar" class="app-nav"><a class="" href="dashboard.html">Dashboard</a><a class="" href="tracker.html">Safety Tracker</a><a class="" href="location.html">Location</a><a class="" href="map.html">Safety Map</a><a class="active" href="report.html">Report</a><a class="" href="reports.html">Reports</a><a class="" href="community.html">Community</a><a class="" href="alerts.html">Alerts</a><a class="" href="notifications.html">Notifications</a><a class="" href="profile.html">Profile</a><a class="" href="settings.html">Settings</a><a href="#" data-logout class="logout-link">Logout</a></nav>
+</header>
+<main class="main"><div class="container"><span class="eyebrow">SAFETY REPORTING</span><h1 class="page-title">Report an incident</h1><p class="page-subtitle">Record a safety concern. Reports are saved in this browser until the backend is connected.</p>
+<section class="card form-card"><form id="reportForm"><div class="form-grid"><div class="field"><label>Title</label><input id="title" required placeholder="Short description"></div><div class="field"><label>Category</label><select id="category"><option>Safety</option><option>Community</option><option>Infrastructure</option><option>GBV Response</option><option>Other</option></select></div><div class="field"><label>Location</label><input id="location" required placeholder="Street / area"></div><div class="field full"><label>Description</label><textarea id="description" required placeholder="Describe what happened or what needs attention."></textarea></div><div class="field full"><label class="check"><input id="anonymous" type="checkbox" checked> Submit anonymously in the community view</label></div></div><button class="btn btn-primary" type="submit">Submit Report</button></form></section></div></main>
+
+<div id="toast" class="toast"></div>
+<script src="js/api-client.js"></script>
+<script src="js/app.js"></script>
+<script src="js/report.js"></script>
+</body>
+</html>

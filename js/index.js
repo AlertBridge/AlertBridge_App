@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{const b=document.querySelector('#menuBtn'),n=document.querySelector('#navbar');b?.addEventListener('click',()=>n?.classList.toggle('open'));n?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>n.classList.remove('open')));});

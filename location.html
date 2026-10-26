@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Location | SafeCommunity</title>
+<link rel="stylesheet" href="location.css">
+<link rel="stylesheet" href="shared.css">
+</head>
+<body>
+
+<header class="app-header">
+  <a class="brand" href="dashboard.html"><span class="brand-mark">S</span><span class="brand-name">Safe<span>Community</span></span></a>
+  <button id="menuBtn" class="menu-btn" aria-label="Open menu"><span></span><span></span><span></span></button>
+  <nav id="navbar" class="app-nav"><a class="" href="dashboard.html">Dashboard</a><a class="" href="tracker.html">Safety Tracker</a><a class="active" href="location.html">Location</a><a class="" href="map.html">Safety Map</a><a class="" href="report.html">Report</a><a class="" href="reports.html">Reports</a><a class="" href="community.html">Community</a><a class="" href="alerts.html">Alerts</a><a class="" href="notifications.html">Notifications</a><a class="" href="profile.html">Profile</a><a class="" href="settings.html">Settings</a><a href="#" data-logout class="logout-link">Logout</a></nav>
+</header>
+<main class="main"><div class="container"><span class="eyebrow">LOCATION SHARING</span><h1 class="page-title">My location</h1><p class="page-subtitle">Use your browser location to view and copy your coordinates. Location is not shared automatically.</p>
+<section class="card location-card"><div class="location-icon">LOC</div><h2 id="locationStatus">Location not requested</h2><p id="coordinates" class="small">Press the button to request permission.</p><div class="location-actions"><button class="btn btn-primary" id="getLocation">Get My Location</button><button class="btn btn-secondary" id="copyLocation">Copy Location</button></div><div class="share-box"><label>Share location text</label><textarea id="shareText" readonly></textarea></div></section></div></main>
+
+<div id="toast" class="toast"></div>
+<script src="js/api-client.js"></script>
+<script src="js/app.js"></script>
+<script src="js/location.js"></script>
+</body>
+</html>

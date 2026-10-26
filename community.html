@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Community | SafeCommunity</title>
+<link rel="stylesheet" href="community.css">
+<link rel="stylesheet" href="shared.css">
+</head>
+<body>
+
+<header class="app-header">
+  <a class="brand" href="dashboard.html"><span class="brand-mark">S</span><span class="brand-name">Safe<span>Community</span></span></a>
+  <button id="menuBtn" class="menu-btn" aria-label="Open menu"><span></span><span></span><span></span></button>
+  <nav id="navbar" class="app-nav"><a class="" href="dashboard.html">Dashboard</a><a class="" href="tracker.html">Safety Tracker</a><a class="" href="location.html">Location</a><a class="" href="map.html">Safety Map</a><a class="" href="report.html">Report</a><a class="" href="reports.html">Reports</a><a class="active" href="community.html">Community</a><a class="" href="alerts.html">Alerts</a><a class="" href="notifications.html">Notifications</a><a class="" href="profile.html">Profile</a><a class="" href="settings.html">Settings</a><a href="#" data-logout class="logout-link">Logout</a></nav>
+</header>
+<main class="main"><div class="container"><div class="section-head"><div><span class="eyebrow">COMMUNITY</span><h1 class="page-title">Community feed</h1><p class="page-subtitle">Share useful, respectful safety updates.</p></div></div>
+<div class="community-grid"><section><div class="card post-form"><textarea id="postText" placeholder="Share a safety update with your community..."></textarea><div class="post-actions"><label><input id="postAnonymous" type="checkbox"> Post anonymously</label><button class="btn btn-primary" id="publishPost">Publish</button></div></div><div id="feed"></div></section><aside class="card community-rules"><h2>Community guidelines</h2><ul><li>Share information that helps others stay safe.</li><li>Protect people's privacy.</li><li>Avoid accusations or unverified claims.</li><li>Use the report tool for incidents.</li></ul></aside></div></div></main>
+
+<div id="toast" class="toast"></div>
+<script src="js/api-client.js"></script>
+<script src="js/app.js"></script>
+<script src="js/community.js"></script>
+</body>
+</html>

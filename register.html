@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Register | SafeCommunity</title>
+<link rel="stylesheet" href="register.css">
+<link rel="stylesheet" href="shared.css">
+</head>
+<body>
+
+<header class="auth-header"><a class="brand" href="index.html"><span class="brand-mark">S</span><span class="brand-name">Safe<span>Community</span></span></a><div class="header-account">Already registered? <a href="login.html">Sign in</a></div></header>
+<main class="auth-main"><section class="auth-card card"><span class="eyebrow">JOIN THE COMMUNITY</span><h1>Create account</h1><p>Register once and go directly to your dashboard.</p><form id="registerForm"><div class="form-grid"><div class="field"><label>Full name</label><input id="name" required></div><div class="field"><label>Phone</label><input id="phone" type="tel" required></div><div class="field full"><label>Email</label><input id="email" type="email" required></div><div class="field"><label>Password</label><input id="password" type="password" minlength="6" required></div><div class="field"><label>Confirm password</label><input id="confirmPassword" type="password" minlength="6" required></div></div><label class="check" style="margin-top:18px"><input id="terms" type="checkbox" required> I understand that the emergency guidance feature does not automatically contact emergency services.</label><button class="btn btn-primary auth-submit" type="submit">Create Account</button></form></section></main>
+
+<div id="toast" class="toast"></div>
+<script src="js/api-client.js"></script>
+<script src="js/app.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>

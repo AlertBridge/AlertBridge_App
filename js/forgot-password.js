@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{document.querySelector("#forgotForm")?.addEventListener("submit",e=>{e.preventDefault();const status=document.querySelector("#formStatus");const message="Password recovery requires the backend email and reset-token service to be connected. No email has been sent.";if(status)status.textContent=message;else toast(message);});});

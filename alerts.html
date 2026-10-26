@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Alerts | SafeCommunity</title>
+<link rel="stylesheet" href="alerts.css">
+<link rel="stylesheet" href="shared.css">
+</head>
+<body>
+
+<header class="app-header">
+  <a class="brand" href="dashboard.html"><span class="brand-mark">S</span><span class="brand-name">Safe<span>Community</span></span></a>
+  <button id="menuBtn" class="menu-btn" aria-label="Open menu"><span></span><span></span><span></span></button>
+  <nav id="navbar" class="app-nav"><a class="" href="dashboard.html">Dashboard</a><a class="" href="tracker.html">Safety Tracker</a><a class="" href="location.html">Location</a><a class="" href="map.html">Safety Map</a><a class="" href="report.html">Report</a><a class="" href="reports.html">Reports</a><a class="" href="community.html">Community</a><a class="active" href="alerts.html">Alerts</a><a class="" href="notifications.html">Notifications</a><a class="" href="profile.html">Profile</a><a class="" href="settings.html">Settings</a><a href="#" data-logout class="logout-link">Logout</a></nav>
+</header>
+<main class="main"><div class="container"><span class="eyebrow">SAFETY NOTICES</span><h1 class="page-title">Alerts</h1><p class="page-subtitle">Important community notices and reminders.</p><div id="alertsList"></div></div></main>
+
+<div id="toast" class="toast"></div>
+<script src="js/api-client.js"></script>
+<script src="js/app.js"></script>
+<script src="js/alerts.js"></script>
+</body>
+</html>
